@@ -33,7 +33,7 @@ MVC stands for Model-View-Controller, a design pattern that helps in organizing 
 
 ## Setting up the Environment
 
-First, ensure Node.js and MongoDB are installed on your machine. Then, set up your project:
+First, ensure Node.js and Mongoose are installed on your machine. Then, set up your project:
 
 ```bash
 mkdir my-api
@@ -46,7 +46,7 @@ npm install express mongoose cors
 
 To enhance the security and flexibility of your application, it's a best practice to move sensitive information, such as your database connection string, into environment variables. This can be achieved using a `.env` file in your Node.js project. Here's how to set it up:
 
-## Navigate to Mongodb.com, Create a new collection called
+## Navigate to Mongodb.com, Create a new collection calls Songs
 
 ### Step 1: Install dotenv Package
 
