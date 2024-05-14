@@ -46,7 +46,10 @@ npm install express mongoose cors
 
 To enhance the security and flexibility of your application, it's a best practice to move sensitive information, such as your database connection string, into environment variables. This can be achieved using a `.env` file in your Node.js project. Here's how to set it up:
 
-## Navigate to Mongodb.com, Create a new collection called Songs
+### Step 1: Navigate to Mongodb.com, Create a new database called GA6 and a new collection called songs
+
+
+
 
 ### Step 1: Install dotenv Package
 
