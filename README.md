@@ -51,7 +51,7 @@ To enhance the security and flexibility of your application, it's a best practic
 
 
 
-### Step 1: Install dotenv Package
+### Step 2: Install dotenv Package
 
 First, you'll need to install the `dotenv` package, which will load environment variables from a `.env` file into `process.env` in your application. Run the following command in your project directory:
 
@@ -59,7 +59,7 @@ First, you'll need to install the `dotenv` package, which will load environment 
 npm install dotenv
 ```
 
-### Step 2: Create a .env File
+### Step 3: Create a .env File
 
 1. In the root of your project directory, create a file named `.env`.
 2. Open the `.env` file in VS Code.
