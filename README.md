@@ -65,9 +65,15 @@ To enhance the security and flexibility of your application, it's a best practic
 
 ### Step 1: Navigate to Mongodb.com, Create a new database called GA6 and a new collection called songs
 
+Navigate to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) and create a new database called `GA6`. Inside the `GA6` database, create a new collection called `songs`.
+
+![Screenshot showing the Create Database Button](Images/1.CreateDatabase.png)
+
+![Screenshot showing the dialog with GA6 and Songs typed into the fields](<Images/2.Create Database.png>)
+
 ### Step 2: Install dotenv Package
 
-First, you'll need to install the `dotenv` package, which will load environment variables from a `.env` file into `process.env` in your application. Run the following command in your project directory:
+We need to install the `dotenv` package, which will load environment variables from a `.env` file into `process.env` in your application. Run the following command in your project directory:
 
 ```powershell
 npm install dotenv
@@ -77,10 +83,11 @@ npm install dotenv
 
 1. In the root of your project directory, create a file named `.env`.
 2. Open the `.env` file in VS Code.
-3. Add your MongoDB connection string as an environment variable in the file. For example:
+3. Get your connection string from MongoDB.com and paste it into the `.env` file. Make sure to add the database name and password to the connection string.
+4. Add your MongoDB connection string as an environment variable in the file. For example:
 
 ```env
-MONGO_URI=YOUR CONNECTION STRING HERE
+MONGO_URI=mongodb+srv://<username>:<password>@<cluster>/<database>?retryWrites=true&w=majority
 ```
 
 ### Step 4: Ensure .env is in Your .gitignore
