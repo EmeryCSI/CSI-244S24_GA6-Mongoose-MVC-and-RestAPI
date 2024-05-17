@@ -31,7 +31,7 @@ MVC stands for Model-View-Controller, a design pattern that helps in organizing 
 2. **View**: Handles the presentation layer for the user. Although we'll focus on the backend, the View would be what the users interact with.
 3. **Controller**: Acts as a bridge between the Model and the View, managing user input, business logic, and updates to the model.
 
-## Setting up the Environment
+# Part 1:  Setting up the Environment
 
 First, ensure Node.js and Mongoose are installed on your machine. Then, set up your project:
 
@@ -69,7 +69,7 @@ npm install dotenv
 MONGO_URI=YOUR CONNECTION STRING HERE
 ```
 
-### Step 3: Ensure .env is in Your .gitignore
+### Step 4: Ensure .env is in Your .gitignore
 
 To prevent sensitive information from being pushed to your Git repository, make sure your `.env` file is listed in your `.gitignore` file. If you don't have a `.gitignore` file, create one in the root of your project, and add the following lines:
 
@@ -80,7 +80,7 @@ node_nodules/
 
 By moving your MongoDB connection string into an `.env` file and utilizing the `dotenv` package, you enhance the security and configurability of your application, keeping sensitive information out of your codebase.
 
-## Building the Application
+# Part 2: Building the Application
 
 Create a new file named server.js in the root folder of my-api, add a simple console statement to verify it is working, and run server.js
 
@@ -92,7 +92,7 @@ If you would like to use nodemon you can install and use that as well.
 
 
 
-## Creating the Model
+### Step 1: Create the Model
 
 In `models/song.js`, define the schema and model for songs in our application:
 
